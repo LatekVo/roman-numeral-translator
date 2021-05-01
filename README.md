@@ -6,24 +6,22 @@ On error, will return '0', since that value cannot be expressed in roman numeral
 and acts as 'false' boolean in c++.<br>
 <br>
 An example use case:<br>
-```c++
-#include <iostream>
-#include "roman.hpp"
 
-int main() {
+	#include <iostream>
+	#include "roman.hpp"
 
-	int out = rom::romToInt("DXIV");
+	int main() {
+
+		int out = rom::romToInt("DXIV");
 	
-	if (out == 0) 
-		std::cout << "error" << std::endl;
-	else 
-		std::cout << out;
+		if (out == 0) 
+			std::cout << "error" << std::endl;
+		else 
+			std::cout << out;
 
-	return 0;
-}
-```
+		return 0;
+	}
+
 Will return:<br> 
-```
-514
-```
-
+	
+	514
